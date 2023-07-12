@@ -6,7 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Task.create!(
-
+  firstname: "John",
+  lastname: "Doe",
+  phonenumber: "123-456-7890",
+  emailaddress: "johndoe@example.com",
+  image: "https://cdn.leonardo.ai/users/42f9429d-850a-4280-aacc-6f7d1643c99b/generations/c21b0ddb-d91e-43ee-b6b2-9e61e631e6e4/variations/Default_A_closeup_of_a_Vietnamese_old_mans_face_illuminated_by_0_c21b0ddb-d91e-43ee-b6b2-9e61e631e6e4_1.jpg?w=512"
 )
 
 Task.create!(
