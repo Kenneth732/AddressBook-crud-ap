@@ -6,3 +6,13 @@ class Task < ApplicationRecord
     validates :image, format: { with: /\.(png|jpg|jpeg|gif)\z/i, message: "Invalid image format" }, allow_blank: true
 end
   
+
+
+# task.rb
+class Task < ApplicationRecord
+    validates :firstname, presence: true, length: { maximum: 50 }
+    validates :lastname, presence: true, length: { maximum: 50 }
+    validates :phonenumber, presence: true, format: { with: /\A\d{10}\z/ }
+    validates :emailaddress, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }
+    # Additional validations for the `image` attribute if necessary
+  end
