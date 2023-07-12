@@ -24,5 +24,10 @@ class TasksController < ApplicationController
       head :no_content  
     end
   
+    private 
+  
+    def task_params
+      params.require(:task).permit(:firstname, :lastname, :phonenumber, :emailaddress, :image)
+    end
   end
   
